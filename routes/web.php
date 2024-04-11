@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 Route::get('/product/new', [ProductController::class, 'new']);
 Route::post('/product', [ProductController::class, 'create']);
+Route::get('/product/edit/{id}', [ProductController::class, 'edit']);
+Route::post('/product/update/{id}', [ProductController::class, 'update']);
+Route::get('/product/delete/{id}', [ProductController::class, 'delete']);
